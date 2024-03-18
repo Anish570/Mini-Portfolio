@@ -6,7 +6,7 @@ const Intro = () => {
   return (
     <>
     <div>
-        <img src="https://anishgtm.netlify.app/assets/profile-pic.png" alt="profile img"  className='bg-slate-600 rounded-full w-[60px] h-[60px] md:w-[100px] md:h-[100px]' />
+        <img src="https://anishgtm.netlify.app/assets/profile-pic.png" alt="profile img"  className='bg-slate-600 rounded-full w-[60px] h-[60px] md:w-[100px] md:h-[100px] object-fill' />
        
         <h3 className='text-[23px] md:text-[45px] mt-[15px] mb-[15px]'>Hey there!👋  <span className='text-cyan-500'> 
         <Typewriter 
@@ -19,7 +19,7 @@ const Intro = () => {
           </span> </h3>
         <div className='mb-[10px] text-[13px] md:text-[19px] flex flex-col gap-3'>
         <p className='flex flex-col'>
-                    on a journey to become a skilled web developer with a knack for crafting
+                    On a journey to become a skilled web developer with a knack for crafting
                     seamless digital experiences. Drawing from a strong foundation in HTML5, CSS3, JavaScript, PHP, 
                     and few on Laravel, I'm eager to carve my path in the world of web development.
             </p>  <p>     
