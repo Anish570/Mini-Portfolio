@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Projects = () => {
+const Projects = ({data}) => {
   return (
-    <div>Projects</div>
+    <>
+    <h6>{data.title}</h6>
+    <img src={data.preview} alt="preview" />
+    <button><a href={data.link} target="_blank" rel="noopener noreferrer">Live Preview</a></button>
+    </>
   )
 }
 
