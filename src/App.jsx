@@ -1,5 +1,5 @@
 import React from 'react'
-import {Intro,Projects,Socials} from './components/index'
+import {Experience, Footer, Intro,Projects,Socials} from './components/index'
 import { SiGmail } from "react-icons/si";
 import { PiGithubLogoFill } from "react-icons/pi";
 import { TfiLinkedin } from "react-icons/tfi";
@@ -35,14 +35,17 @@ function App() {
     ))
   }
     </div>
-   <div>
-    <h3>Projects</h3>
+    <Experience/>
+    <h3 className='text-white text-[15px] md:text-[27px]'>Projects</h3>
+   <div className='flex gap-8 flex-wrap mt-[15px] '>
+    
     {
       Projectsdata.map((item)=>(
         <Projects data={item}/>
       ))
     }
    </div>
+    <Footer/>
     </div>
   )
 }

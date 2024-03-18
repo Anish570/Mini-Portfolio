@@ -6,7 +6,7 @@ const Intro = () => {
   return (
     <>
     <div>
-        <img src="" alt="profile img"  className='bg-slate-600 w-[60px] h-[60px] md:w-[100px] md:h-[100px]' />
+        <img src="https://anishgtm.netlify.app/assets/profile-pic.png" alt="profile img"  className='bg-slate-600 rounded-full w-[60px] h-[60px] md:w-[100px] md:h-[100px]' />
        
         <h3 className='text-[23px] md:text-[45px] mt-[15px] mb-[15px]'>Hey there!👋  <span className='text-cyan-500'> 
         <Typewriter 
