@@ -4,6 +4,7 @@ import { SiGmail } from "react-icons/si";
 import { PiGithubLogoFill } from "react-icons/pi";
 import { TfiLinkedin } from "react-icons/tfi";
 import Projectsdata from './datas/Projectsdata';
+import ToggleBtn from './components/ToggleBtn';
 
 function App() {
   const sociallinks= [
@@ -26,7 +27,8 @@ function App() {
 ];
 
   return (
-    <div className='pl-[10px] pt-[3px] md:pl-[16px] md:pt-[6px] '>
+    <div className='pl-[10px] pt-[3px] md:pl-[16px] md:pt-[6px] bg-slate-300 text-black dark:bg-gray-900 dark:text-gray-300'>
+    <ToggleBtn/>
     <Intro/>
     <div className='flex flex-wrap items-center gap-2'>
     {
