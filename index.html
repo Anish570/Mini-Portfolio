@@ -2,12 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio(Anish)</title>
+    <script type="text/javascript" src="dat.gui.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'iconfont';
+            src: url('iconfont.ttf') format('truetype');
+        }
+        canvas{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            z-index:1;
+        }
+        .dg.ac {
+           display: none;
+        }
+        .promo{
+            display: none;
+        }
+    </style>
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-105392568-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- <script async src="https://www.google-analytics.com/analytics.js"></script> -->
   </head>
   <body>
-    <div id="root"></div>
+    <canvas id="fluid-canvas"></canvas>
+    <!-- Mother of God, pls forgive me -->
+    <div  class="promo">
+      <div class="promo-middle">
+          <div class="promo-content">
+              <div class="promo-header">
+                  <span class="promo-close">&times;</span>
+              </div>
+              <div class="promo-body">
+                  <p>Try Fluid Simulation app!</p>
+                  <div class="links-container">
+                      <a class="link" id="apple_link" target="_blank">
+                          <img class="link-img" alt="Download on the App Store" src="app_badge.png"/>
+                      </a>
+                      <a class="link" id="google_link" target="_blank">
+                          <img class="link-img" alt="Get it on Google Play" src="gp_badge.png"/>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <div  id="root">
+    </div>
+   
+    <script src="./script.js"></script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
