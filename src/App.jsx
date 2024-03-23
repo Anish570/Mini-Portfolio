@@ -27,7 +27,7 @@ function App() {
 ];
 
   return (
-    <div className='pl-[10px] pt-[3px] md:pl-[16px] md:pt-[6px] bg-slate-300 text-black dark:bg-gray-900 dark:text-gray-300'>
+    <div className='pl-[10px] pt-[3px] md:pl-[16px] md:pt-[6px]  text-black dark:bg-gray-900/25 dark:text-gray-100'>
     <ToggleBtn/>
     <Intro/>
     <div className='flex flex-wrap items-center gap-2'>
