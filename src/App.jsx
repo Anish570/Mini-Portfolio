@@ -32,8 +32,8 @@ function App() {
     <Intro/>
     <div className='flex flex-wrap items-center gap-2'>
     {
-    sociallinks.map((item)=>(
-      <Socials data={item}/>
+    sociallinks.map((item,index)=>(
+      <Socials key={index} data={item}/>
     ))
   }
     </div>
@@ -42,8 +42,8 @@ function App() {
    <div className='flex gap-8 flex-wrap mt-[15px] '>
     
     {
-      Projectsdata.map((item)=>(
-        <Projects data={item}/>
+      Projectsdata.map((item,index)=>(
+        <Projects key={index} data={item}/>
       ))
     }
    </div>
